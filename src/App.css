@@ -1,0 +1,156 @@
+General Styles
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background: linear-gradient(135deg, #ed1c24, #000000);
+  color: white;
+  padding: 4rem 2rem;
+  height: 60vh;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0 0;
+}
+
+.hero button {
+  margin-top: 2rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #707075;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #333333;
+}
+
+/* Featured Spaces Section */
+.featured-spaces {
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+.featured-spaces h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #ed1c24;
+}
+
+.featured-spaces-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.space-card {
+  background: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.space-card:hover {
+  transform: translateY(-5px);
+}
+
+.space-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.space-card-content {
+  padding: 1rem;
+}
+
+.space-card-content h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.space-card-content p {
+  font-size: 0.9rem;
+  color: #707075;
+}
+
+.space-card-content .rating {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #ed1c24;
+}
+
+/* Footer Section */
+.footer {
+  padding: 1.5rem 2rem;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #ed1c24;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .featured-spaces h2 {
+    font-size: 1.8rem;
+  }
+}

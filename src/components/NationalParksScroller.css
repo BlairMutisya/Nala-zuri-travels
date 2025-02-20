@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap');
+
+.hero-ticker {
+  overflow: hidden;
+  height: 300px; /* Adjust based on your design */
+  position: relative;
+}
+
+.hero-ticker--enabled {
+  overflow: hidden;
+}
+
+.hero-ticker__list {
+  list-style: none;
+  /* position:absolute; */
+  top: 0;
+  width: 100%;
+  transition: transform 0.5s linear;
+  margin-right: -6cm;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-ticker__list-item {
+  font-family:"Playfair";
+  height: 50px; /* Adjust based on your design */
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  font-size: 26px; /* Adjust based on your design */
+  font-weight: 500;
+  color: #FFFF
+  ; /* Adjust based on your design */
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  margin-right: 640px;
+  text-transform: uppercase;
+}
+
+.hero-ticker__list-item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero-ticker__list-item a:hover {
+  text-decoration: underline;
+}
+
+.hero-ticker__list-item--dimmer {
+  opacity: 0.7;
+}
+
+.hero-ticker__list-item--dim {
+  opacity: 0.5;
+}
+
+.hero-ticker__list-item--featured {
+  font-weight: bold;
+  color: #FA8B02; /* Highlight color for featured items */
+}

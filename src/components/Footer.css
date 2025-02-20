@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap');
+.footer {
+  background-color: #fff;
+  color: #0b0a0a;
+  padding: 0px 13px;
+  text-align: center;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 70px;
+  align-items: start;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr; /* Reduce columns for better fit */
+    gap: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr; /* Stack in one column */
+    text-align: center;
+  }
+  
+  .footer-links {
+    justify-content: center;
+  }
+
+  .footer-contact {
+    text-align: center;
+  }
+
+  .footer-social {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 60px 10px; /* Reduce padding for smaller screens */
+  }
+
+  .footer-logo img {
+    max-width: 120px; /* Resize logo */
+  }
+
+  .footer-social a {
+    font-size: 18px; /* Reduce icon size */
+    margin: 0 10px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+}
+
+.footer-logo img {
+  max-width: 150px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 100px;
+}
+
+.footer-column h3 {
+  font-size: 23px;
+  margin-bottom: 10px;
+  color: #D4AF37;
+  font-family: "Play-fair";
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  font-family: Play-fair;
+  /* font-size: 20px; */
+}
+
+.footer-column ul li {
+  margin: 10px 0;
+}
+
+.footer-column ul li a {
+  color: #1b1a1a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #5A5A5A;
+}
+
+.footer-contact {
+  text-align: left;
+}
+
+.footer-contact h3 {
+  font-size: 23px;
+  color: #D4AF37;
+  font-family:"Play-fair";
+}
+
+.footer-contact p {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Play-fair";
+}
+
+.footer-contact svg {
+  color: #D4AF37;
+}
+
+.footer-social {
+  margin-top: -100px;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 20px;
+  color: #0f0e0e;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #D4AF37;
+}
+
+.footer-bottom {
+  margin-top: 2px;
+  border-top: 1px solid #707075;
+  /* padding-top: 1px; */
+  font-size: 14px;
+  padding-bottom: 3px;
+}

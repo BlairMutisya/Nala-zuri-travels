@@ -1,0 +1,186 @@
+import React from "react";
+import NationalParksScroller from "../components/NationalParksScroller";
+import "./LandingPage.css";
+// import "swiper/css";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Navigation, Pagination } from "swiper/modules";
+import image1 from "../assets/image1.jpg";
+import image2 from "../assets/image2.jpg";
+import image3 from "../assets/image3.jpg";
+import image4 from "../assets/image4.jpg";
+import image5 from "../assets/image5.jpg";
+import image6 from "../assets/image6.jpg";
+import image7 from "../assets/image7.jpg";
+import image8 from "../assets/image8.jpg";
+import image9 from "../assets/image9.jpg";
+import image10 from "../assets/image10.jpg";
+import image11 from "../assets/image11.jpg";
+import image12 from "../assets/image12.jpg";
+import image13 from "../assets/image13.jpg";
+import image14 from "../assets/image14.jpg";
+import Testimonials from "../components/Testimonials";
+import Footer from "../components/Footer";
+
+const LandingPage = () => {
+  const scrollToNextSection = () => {
+    document
+      .getElementById("about-section")
+      .scrollIntoView({ behavior: "smooth" });
+  };
+
+  return (
+    <div className="landing-page">
+      {/* Hero Section */}
+      <section className="hero-section">
+        <div className="hero-content-wrapper">
+          <h1 className="hero-heading">WHERE CAN WE TAKE YOU?</h1>
+          <NationalParksScroller />
+          <div className="hero-input-container">
+            <input
+              type="text"
+              className="search-input"
+              placeholder="Search for a park"
+            />
+            <button className="search-btn">GO</button>
+          </div>
+        </div>
+        <div className="scroll-arrow-icon" onClick={scrollToNextSection}>
+          ⬇
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about-section" className="about-section">
+        <h1 className="about-heading">
+          We believe in safaris that touch the soul!
+        </h1>
+        <p className="about-description1">
+          The Nalazuri Travels <em>Experience</em>; Your Pathways To{" "}
+          <em>Limitless Adventures</em>
+        </p>
+        <p className="about-description">
+          Your itinerary is thoughtfully designed to match your dreams, crafted
+          by our local Kenyan team with extensive field expertise, logistical
+          skill, and an intimate understanding of the destinations we recommend.
+          Unlike office-based sales agents, we bring hands-on experience to
+          every detail. We own vehicles, not camps, allowing us to focus
+          entirely on curating your perfect safari, free from any bias toward
+          specific accommodations. Our goal is simple: to take you to the best
+          locations for an unforgettable experience.
+        </p>
+        <p className="about-description">
+          Our goal is simple: to take you to the best locations for an
+          unforgettable experience.
+        </p>
+        <div className="center-container">
+          <a
+            href="https://mackayafrica.com/inquire/"
+            className="dream-list-btn"
+          >
+            SEND US YOUR DREAM LIST
+          </a>
+        </div>
+      </section>
+      <section className="image-grid">
+        <div className="grid-item">
+          <img src={image1} alt="Exquisite Views" />
+          <div className="overlay">
+            <p>Exquisite Views</p>
+          </div>
+        </div>
+        <div className="grid-item">
+          <img src={image2} alt="Tribal Expeditions" />
+          <div className="overlay">
+            <p>Tribal Expeditions</p>
+          </div>
+        </div>
+        <div className="grid-item">
+          <img src={image3} alt="Wildlife Photography" />
+          <div className="overlay">
+            <p>Wildlife Photography</p>
+          </div>
+        </div>
+        <div className="grid-item">
+          <img src={image4} alt="Best Vehicles" />
+          <div className="overlay">
+            <p>Best Vehicles</p>
+          </div>
+        </div>
+        <div className="grid-item">
+          <img src={image5} alt="Ethical Advisors" />
+          <div className="overlay">
+            <p>Ethical Advisors</p>
+          </div>
+        </div>
+        <div className="grid-item">
+          <img src={image6} alt="Luxury" />
+          <div className="overlay">
+            <p>Luxury</p>
+          </div>
+        </div>
+      </section>
+      <section className="testimonials-section">
+        <h2 className="section-title">Our Guest Testimonials</h2>
+        <Testimonials />
+      </section>
+      <section class="landing-continuation">
+        {/* <div class="quote-section">
+          <blockquote>
+            "The only man I envy is the man who has not yet been to Africa – for
+            he has so much to look forward to."
+          </blockquote>
+          <footer>- Richard Mullin</footer>
+          <button class="cta-button">PLAN YOUR ADVENTURE</button>
+        </div> */}
+
+        <div class="image-section">
+          <div class="text-content">
+            <blockquote>
+              <span class="highlight">
+                TANZANIA - The jewel of African safaris
+              </span>
+              "The only man I envy is the man who has not yet been to Africa –
+              for he has so much to look forward to."
+              <footer>- Richard Mullin</footer>
+            </blockquote>
+            <button class="cta-button">START YOUR JOURNEY</button>
+          </div>
+          <img src={image7} alt="African Wildlife"></img>
+        </div>
+
+        <div class="grid-gallery">
+          <div class="grid-item">
+            <img src={image8} alt="Wildlife"></img>
+          </div>
+          <div class="grid-item">
+            <img src={image9} alt="Safari Jeep"></img>
+          </div>
+          <div class="grid-item">
+            <img src={image10} alt="Silhouette"></img>
+          </div>
+          <div class="grid-item">
+            <img src={image11} alt="Nature Road"></img>
+          </div>
+          <div class="grid-item">
+            <img src={image12} alt="Rhino"></img>
+          </div>
+          <div class="grid-item">
+            <img src={image13} alt="Safari"></img>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src={image14} alt="Safari Jeep"></img>
+        </div>
+        <div class="quote-section">
+          <blockquote>
+            "The only man I envy is the man who has not yet been to Africa – for
+            he has so much to look forward to." "Travel isn’t always about the
+            destination; it’s about the journey and the memories made along the
+            way."
+          </blockquote>
+        </div>
+      </section>
+    </div>
+  );
+};
+export default LandingPage;

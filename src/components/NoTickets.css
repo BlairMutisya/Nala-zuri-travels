@@ -1,0 +1,32 @@
+.no-tickets-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.animation {
+  width: 250px;
+  height: 250px;
+}
+
+.no-tickets-text {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #707075;
+  font-weight: 500;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

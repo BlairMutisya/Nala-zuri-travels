@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+.landing-page {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #ffffff;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Hero Section Styles */
+.hero-section {
+  background-image: url("../../public/bg-nalazuri.jpg"); /* Replace with actual file */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fdf9ec;
+}
+
+.hero-content-wrapper {
+  text-align: center;
+}
+
+.hero-heading {
+  font-size: 2.8rem;
+  line-height: 0rem;
+  font-family:"Playfair";
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  margin-left: -12cm;
+  margin-top: -4cm;
+}
+
+.hero-input-container {
+  margin: 0;
+  padding: 0;
+}
+
+.search-input {
+  padding: 14px;
+  width: 480px;
+  border: 1px solid #524e4e;
+  margin-left: -15cm;
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+}
+
+
+.search-btn {
+  padding: 14px 28px;
+  background-color: #a1a1a1;
+  color: white;
+  border: 1px solid #a1a1a1;
+  cursor: pointer;
+  margin-left: -1.7cm;
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+}
+
+.search-btn:hover {
+  background-color: #5a5a5a00;
+}
+
+.scroll-arrow-icon {
+  font-size: 2rem;
+  color: rgb(191, 178, 178);
+  cursor: pointer;
+  /* margin-top: 50px; */
+  animation: bounce 1.8s infinite;
+  position: absolute;
+  bottom: -60px;  outline-offset: 2cm;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* About Section Styles */
+.about-section {
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+.about-heading {
+  font-family: "Playfair Display", helvetica;
+  font-size: 45px;
+  font-weight: 600;
+  letter-spacing: 3.8px;
+  color: #8d1612;
+}
+
+.about-description {
+  line-height: 1.6;
+  margin: 10px 0;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 300;
+}
+.about-description1 {
+  font-family: "Playfair Display", helvetica;
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-style: normal;
+  line-height: 1.5em;
+  letter-spacing: 2.7px;
+  color: #8d1612;
+}
+
+.dream-list-btn {
+  display: block;
+  text-align: center;
+  padding: 12px 24px;
+  color: FA8B02;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Image Grid Section */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 10px; /* Increase spacing between grid items */
+  /* padding: 10px; Inner padding for the grid container */
+  /* max-width: 1300px; Limit the total width of the grid */
+  /* margin: 0 50; Center the grid horizontally */
+  box-sizing: border-box; /* Ensures padding is included in the total width */
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  /* border-radius: 10px; Rounded corners */
+}
+.grid-item span {
+  position: absolute;
+  bottom: 10px; /* Position text slightly above the bottom */
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  margin: 0;
+}
+
+.grid-item .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Black transparent overlay */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 1;
+}
+
+.grid-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(14, 14, 14, 0);
+  transition: background 0.3s ease-in-out;
+}
+
+.grid-item:hover::before {
+  background: rgba(0, 0, 0, 0.6); /* Black transparent effect */
+}
+
+/* .grid-item:hover .overlay {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+} */
+/* .landing-page {
+  font-family: 'Poppins', sans-serif;
+  margin: 20px;
+  padding: 0;
+  color: #333;
+} */
+
+/* Testimonials Section */
+/* .testimonials-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #141310;
+} */
+
+/* .section-title {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 54px;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 1.5em;
+    letter-spacing: 2.7px;
+    color: #8D1612;
+
+} */
+
+/* .testimonial-slider {
+  display: flex;
+  overflow: hidden;
+  gap: 30px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+ .testimonial {
+  min-width: 300px;
+  max-width: 300px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #555;
+}
+
+.testimonial-author {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.testimonial-subtitle {
+  font-size: 0.9rem;
+  color: #9e1b23;
+}
+
+.design-button,
+.wishlist-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #9e1b23;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.design-button:hover,
+.wishlist-button:hover {
+  background-color: #b31d2b;
+} */
+
+/* Image Gallery Section */
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 40px 20px;
+}
+*/ .image-placeholder {
+  width: 100%;
+  padding-bottom: 75%; /* Aspect ratio */
+  background: #ddd;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-placeholder::before {
+  content: "Image Placeholder";
+  position: absolute;
+  color: #555;
+  font-size: 1rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.landing-continuation {
+  /* padding: 40px 20px; */
+  background-color: #ffffff;
+  text-align: center; /* Centers text within the container */
+  width: 100%; /* Makes the section span full width */
+  margin: 0; /* Removes any auto margins */
+  box-sizing: border-box; /* Ensures padding doesn’t affect total width */
+}
+
+/* Optional: For smaller screens, center the section */
+@media (max-width: 768px) {
+  .landing-continuation {
+    margin-left: 10; /* Reset margin */
+    margin-right: 0; /* Reset margin */
+    max-width: 100%; /* Full width on smaller screens */
+  }
+}
+
+/* .quote-section {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+} */
+
+.quote-section blockquote {
+  font-family: "Georgia", serif;
+  font-size: 1.8rem;
+  color: #555;
+  font-style: italic;
+
+}
+
+.quote-section footer {
+  font-weight: bold;
+  color: #8d1612;
+  margin-bottom: 20px;
+}
+
+.image-section {
+  display: flex;
+  justify-content: space-between; /* Ensures text moves left while image stays right */
+  align-items: center; /* Centers content vertically */
+  width: 100%;
+  padding: 0px -5px;
+  background-color: #ffffff;
+  margin-left: 20px;
+  margin: 0;
+}
+
+.text-content {
+  /* max-width: 50%; */
+  text-align: center; /* Align text content to the left */
+  align-items: center;
+  margin: 0 auto; /* Center the section */
+  position: relative;
+}
+
+.image-section img {
+  width: 100%; /* Makes image responsive */
+  max-width: 510px; /* Restricts maximum width */
+  margin-left: -30px; /* Adds spacing between text and image */
+  left: 10px;
+}
+
+
+.image-section blockquote {
+  font-family: "Lora", serif;
+  font-size: 1.7rem;
+  color: #333;
+  line-height: 1.6;
+  margin: 10px 0;
+  align-items: center;
+  font-style: italic;
+}
+
+.image-section .highlight {
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: #8d1612;
+  display: block;
+  margin-bottom: 10px;
+  align-content: center;
+  font-family: "Play-fair", serif;
+}
+
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+  grid-template-rows: repeat(2, auto); /* Creates 2 rows */
+  gap: 10px; /* Adds spacing between images */
+  width: 57.8vw; /* Adjust width to fit on the left */
+  height: 110vh; /* Full viewport height */
+  position: absolute;
+  left: 10; /* Aligns the grid to the left side */
+  /* padding: 10px; */
+  background-color: #fdf9ec; /* Optional: Add background for contrast */
+  margin: 0;
+  padding: o;
+}
+
+.grid-gallery .grid-item img {
+  width: 100%;
+  height: 100%;
+  /* border-radius: 10px; */
+}
+
+
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #8d1612;
+  border: 2px solid #8d1612;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #8d1612;
+  color: #fff;
+}
+.image-container {
+  display: flex;
+  justify-content: flex-end; /* Push to the right */
+  margin-top: 20px; /* Add space after the grid */
+}
+
+.image-container img {
+  width: 100%; /* Makes image responsive */
+  max-width: 530px; /* Restricts maximum width */
+  margin-left: 10px; /* Adds spacing between text and image */
+  left: 10px;
+  margin-top: 18cm;
+  height: 13cm;
+}
