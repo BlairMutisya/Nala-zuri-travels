@@ -151,3 +151,68 @@
   font-weight: bold;
   margin-top: 30px;
 }
+/* Tour Information Section */
+.tour-info-section {
+  background-color: #f7f7f7;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tour-info-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.tour-info-section p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.tour-info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tour-info-list li {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.tour-info-list li:last-child {
+  border-bottom: none;
+}
+
+.tour-info-list .icon {
+  font-size: 1.2rem;
+  margin-right: 0.8rem;
+  color: #ff8c00;
+}
+
+.tour-info-list strong {
+  margin-right: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .tour-info-section {
+    padding: 1.5rem;
+  }
+
+  .tour-info-list li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tour-info-list .icon {
+    margin-bottom: 0.5rem;
+  }
+}

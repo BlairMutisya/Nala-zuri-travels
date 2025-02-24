@@ -4,6 +4,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "./Testimonials.css";
 import { Pagination, Autoplay } from "swiper";
+// import { Pagination, Autoplay } from "swiper/modules";
+
 
 
 const Testimonials = () => {
