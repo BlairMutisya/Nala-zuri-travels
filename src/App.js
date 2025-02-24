@@ -8,6 +8,7 @@ import LandingPage from "./pages/LandingPage";
 import ContactPage from "./pages/ContactPage";
 import TicketsPage from './pages/TicketsPage';
 import AmboseliTourPage from "./pages/AmboseliTourPage";
+import LakeNakuruPage from "./pages/LakeNakuruPage";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/tickets" element={<TicketsPage />} />
         <Route path="/AmboseliNationalPark" element={<AmboseliTourPage />} />
+        <Route path="/LakeNakuru" element={<LakeNakuruPage />} />
       </Routes>
       <Footer />
     </div>

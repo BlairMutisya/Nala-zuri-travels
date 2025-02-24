@@ -3,8 +3,8 @@ import "./NationalParksScroller.css";
 
 const nationalParksData = [
   { name: "Maasai Mara National Park", link: "/parks/maasai-mara" },
-  { name: "Amboseli National Park", link: "/parks/amboseli" },
-  { name: "Lake Nakuru National Park", link: "/parks/lake-nakuru" },
+  { name: "Amboseli National Park", link: "/AmboseliNationalPark" },
+  { name: "Lake Nakuru National Park", link: "/LakeNakuru" },
   { name: "Tsavo East National Park", link: "/parks/tsavo-east" },
   { name: "Tsavo West National Park", link: "/parks/tsavo-west" },
   { name: "Nairobi National Park", link: "/parks/nairobi" },

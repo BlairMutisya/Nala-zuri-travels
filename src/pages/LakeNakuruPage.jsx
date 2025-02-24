@@ -27,8 +27,6 @@ import {
   faMoneyBillWave,
   faBus,
 } from "@fortawesome/free-solid-svg-icons";
-import { useNavigate } from "react-router-dom";
-
 
 const AmboseliTourPage = () => {
   // Initialize Date Range
@@ -41,14 +39,12 @@ const AmboseliTourPage = () => {
   // Single date picker state
   const [startDate, setStartDate] = useState(new Date());
 
-  const navigate = useNavigate();
-
   return (
     <div className="park-container">
       {/* Back Button */}
-    <button className="back-button" onClick={() => navigate("/")}>  
-      <FaArrowLeft className="icon" /> Back
-    </button>
+      <button className="back-button">
+        <FaArrowLeft className="icon" /> Back
+      </button>
 
       {/* Main Content */}
       <div className="main-content">
@@ -68,18 +64,20 @@ const AmboseliTourPage = () => {
 
         {/* Right Section - Tour Details */}
         <div className="tour-details">
-          <h1 className="title">Amboseli National Park</h1>
+          <h1 className="title">
+            Lake Nakuru National Park – A Birdwatcher’s Paradise
+          </h1>
           <p className="price">
             from <span>KSH 8,500</span>
           </p>
           <p className="description">
-            Set against the majestic backdrop of Mount Kilimanjaro, Amboseli is
-            famous for its large herds of elephants, some of the biggest in
-            Africa. The park’s open plains, swamps, and woodlands provide a
-            perfect setting for spotting diverse wildlife, including buffaloes,
-            giraffes, zebras, and numerous bird species. Photographers and
-            nature lovers are drawn to Amboseli for its dramatic landscapes and
-            iconic elephant shots with Kilimanjaro in the background.
+            Famous for its alkaline lake and spectacular flamingo populations,
+            Lake Nakuru National Park is a must-visit for bird enthusiasts and
+            nature lovers. The park is also a key rhino sanctuary, home to both
+            black and white rhinos, as well as tree-climbing lions, leopards,
+            and Rothschild’s giraffes. The picturesque landscape, with acacia
+            woodlands and waterfalls, makes it one of the most scenic parks in
+            Kenya.
           </p>
 
           {/* Booking Section */}
@@ -171,7 +169,6 @@ const AmboseliTourPage = () => {
           <img src={image18} alt="Amboseli View 8" className="gallery-image" />
         </div>
       </div>
-      
     </div>
   );
 };
