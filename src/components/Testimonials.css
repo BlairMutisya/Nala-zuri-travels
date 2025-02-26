@@ -104,7 +104,7 @@ cite2 {
 }
 .swiper-pagination {
   position: absolute; /* Enable repositioning */
-  bottom: 280px !important; /* Move the entire pagination section upwards */
+  bottom: 265px !important; /* Move the entire pagination section upwards */
   left: 0;
   right: 0;
   text-align: center;

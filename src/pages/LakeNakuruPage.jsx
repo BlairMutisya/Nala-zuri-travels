@@ -117,7 +117,7 @@ const AmboseliTourPage = () => {
       <div className="tour-info-section">
         <h2 className="details-title">Tour Information</h2>
         <p className="details-description">
-          Experience the breathtaking landscapes of Amboseli with guided tours,
+          Experience the breathtaking landscapes of Amboseli`` with guided tours,
           comfortable transport, and knowledgeable guides. Witness wildlife in
           their natural habitat while enjoying a relaxing and unforgettable
           journey.
