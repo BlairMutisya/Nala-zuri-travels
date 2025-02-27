@@ -17,7 +17,7 @@ import image17 from "../assets/image17.jpg";
 import image18 from "../assets/image18.jpg";
 
 
-import "./Parks.css";
+import "./AmboseliNationalPark.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUsers,

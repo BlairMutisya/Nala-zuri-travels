@@ -3,8 +3,8 @@ import { FaArrowLeft } from "react-icons/fa";
 import { MdAccessTime } from "react-icons/md";
 import { DateRange } from "react-date-range";
 import addYears from "date-fns/addYears";
-import { enGB } from "date-fns/locale"; // Import locale
-import "react-date-range/dist/styles.css"; // Main style file
+import { enGB } from "date-fns/locale"; 
+import "react-date-range/dist/styles.css"; 
 import "react-date-range/dist/theme/default.css"; // Theme CSS
 import "react-datepicker/dist/react-datepicker.css";
 import image11 from "../assets/image11.jpg";
@@ -17,7 +17,7 @@ import image17 from "../assets/image17.jpg";
 import image18 from "../assets/image18.jpg";
 import Testimonials from "../components/Testimonials";
 
-import "./Parks.css";
+import "./AmboseliNationalPark.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUsers,

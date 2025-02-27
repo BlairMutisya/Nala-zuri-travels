@@ -17,7 +17,7 @@ import image17 from "../assets/image17.jpg";
 import image18 from "../assets/image18.jpg";
 import Testimonials from "../components/Testimonials";
 
-import "./Parks.css";
+import "./AmboseliNationalPark.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUsers,
@@ -71,9 +71,9 @@ const AmboseliTourPage = () => {
         {/* Right Section - Tour Details */}
         <div className="tour-details">
           <h1 className="title">Amboseli National Park</h1>
-          <p className="price">
+          {/* <p className="price">
             from <span>KSH 8,500</span>
-          </p>
+          </p> */}
           <p className="description">
             Set against the majestic backdrop of Mount Kilimanjaro, Amboseli is
             famous for its large herds of elephants, some of the biggest in
