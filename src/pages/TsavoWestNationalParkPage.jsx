@@ -30,8 +30,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 
-
-const AmboseliTourPage = () => {
+const TsavoWestNationalParkPage = () => {
   // Initialize Date Range
   const [dateRange, setDateRange] = useState({
     startDate: new Date(),
@@ -47,9 +46,9 @@ const AmboseliTourPage = () => {
   return (
     <div className="park-container">
       {/* Back Button */}
-    <button className="back-button" onClick={() => navigate("/")}>  
-      <FaArrowLeft className="icon" /> Back
-    </button>
+      <button className="back-button" onClick={() => navigate("/")}>
+        <FaArrowLeft className="icon" /> Back
+      </button>
 
       {/* Main Content */}
       <div className="main-content">
@@ -60,12 +59,12 @@ const AmboseliTourPage = () => {
             alt="Amboseli National Park"
             className="main-image"
           />
-        <div /> 
-        <div className="thumbnail-gallery">
+          <div />
+          <div className="thumbnail-gallery">
             <img src={image17} alt="Gallery 1" className="thumbnail" />
             <img src={image17} alt="Gallery 2" className="thumbnail" />
             <img src={image18} alt="Gallery 3" className="thumbnail" />
-        </div>
+          </div>
         </div>
 
         {/* Right Section - Tour Details */}
@@ -173,9 +172,8 @@ const AmboseliTourPage = () => {
           <img src={image18} alt="Amboseli View 8" className="gallery-image" />
         </div>
       </div>
-
     </div>
   );
 };
 
-export default AmboseliTourPage;
+export default TsavoWestNationalParkPage;

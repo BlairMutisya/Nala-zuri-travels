@@ -1,8 +1,4 @@
 .park-container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px 0;
   font-family: "Poppins", sans-serif;
 }
 
@@ -12,45 +8,59 @@
   color: #666;
   font-size: 14px;
   background: none;
-  border: none;
+  border: 333;
   cursor: pointer;
-}
-
-.back-button .icon {
-  margin-right: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px; /* Ensures space between button and image */
 }
 
 .main-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  margin-top: 20px;
+  gap: 20px; 
+  margin: 0;
+  padding: 0;
 }
 
 .image-section {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+
 }
 
+
+
 .main-image {
-  width: 100%;
-  height: 70%;
-  border-radius: 8px;
+  width: 100% !important;
+  max-width: 700px !important;
+  height: auto !important;
+ margin: 0;
+  padding: 0;
+
 }
+
 
 .thumbnail-gallery {
   display: flex;
-  gap: 50px; /* Reduce spacing for a tighter look */
-  margin-top: -150; /* Remove negative margin */
-  justify-content: center; /* Center images */
+  gap: 20px; /* Reduce spacing for a tighter layout */
+  justify-content: center;
   align-items: center;
+  top: 65%;
+  position: absolute;
 }
 
+
+
 .thumbnail {
-  width: 100px; /* Adjust image size */
-  height: 120px; /* Keep consistent aspect ratio */
-  border-radius: 12px; /* Add rounded corners */
-  object-fit: cover; /* Ensure images fit nicely */
+  width: 90px; /* Adjust image size */
+  height: 130px; /* Keep consistent aspect ratio */
+
+   /* Ensure images fit nicely */
 }
 
 
@@ -113,7 +123,7 @@
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 10px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .time-selector input {
@@ -156,7 +166,7 @@
   background-color: #ffffff;
   padding: 2rem;
   border-radius: 12px;
-  margin-top: 2rem;
+  margin-top: -3rem;
   /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
 }
 
@@ -235,11 +245,12 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 15px;
+  margin-bottom: 3rem;
 }
 
 .gallery-image {
   width: 100%;
-  height: 200px;
+  height: 250px;
   object-fit: cover;
   /* border-radius: 12px; */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -248,4 +259,100 @@
 .gallery-image:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 1024px) {
+  .main-content {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .main-image {
+    max-width: 100% !important;
+  }
+
+  .thumbnail-gallery {
+    top: auto;
+    position: relative;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+
+  .thumbnail {
+    width: 70px;
+    height: 100px;
+  }
+
+  .tour-details {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .price {
+    font-size: 16px;
+  }
+
+  .buy-button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .tour-info-section {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .tour-info-list li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tour-info-list .icon {
+    margin-bottom: 0.5rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .gallery-image {
+    height: 180px;
+  }
+
+  .buy-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .thumbnail {
+    width: 60px;
+    height: 90px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-image {
+    height: 160px;
+  }
+
+  .buy-button {
+    padding: 8px;
+    font-size: 12px;
+  }
 }

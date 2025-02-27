@@ -15,7 +15,6 @@ import image15 from "../assets/image15.jpg";
 import image16 from "../assets/image16.jpg";
 import image17 from "../assets/image17.jpg";
 import image18 from "../assets/image18.jpg";
-
 import "./Parks.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -27,6 +26,7 @@ import {
   faMoneyBillWave,
   faBus,
 } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 
 const AmboseliTourPage = () => {
   // Initialize Date Range
@@ -38,11 +38,12 @@ const AmboseliTourPage = () => {
 
   // Single date picker state
   const [startDate, setStartDate] = useState(new Date());
-
+  // Navigation hook
+  const navigate = useNavigate();
   return (
     <div className="park-container">
       {/* Back Button */}
-      <button className="back-button">
+      <button className="back-button" onClick={() => navigate("/")}>
         <FaArrowLeft className="icon" /> Back
       </button>
 
@@ -56,7 +57,7 @@ const AmboseliTourPage = () => {
             className="main-image"
           />
           <div className="thumbnail-gallery">
-            <img src={image16} alt="Gallery 1" className="thumbnail" />
+            <img src={image17} alt="Gallery 1" className="thumbnail" />
             <img src={image17} alt="Gallery 2" className="thumbnail" />
             <img src={image18} alt="Gallery 3" className="thumbnail" />
           </div>
@@ -117,10 +118,10 @@ const AmboseliTourPage = () => {
       <div className="tour-info-section">
         <h2 className="details-title">Tour Information</h2>
         <p className="details-description">
-          Experience the breathtaking landscapes of Amboseli`` with guided tours,
-          comfortable transport, and knowledgeable guides. Witness wildlife in
-          their natural habitat while enjoying a relaxing and unforgettable
-          journey.
+          Experience the breathtaking landscapes of Amboseli`` with guided
+          tours, comfortable transport, and knowledgeable guides. Witness
+          wildlife in their natural habitat while enjoying a relaxing and
+          unforgettable journey.
         </p>
 
         <ul className="tour-info-list">
@@ -135,7 +136,7 @@ const AmboseliTourPage = () => {
           <li>
             <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" />
             <strong>Departing and arriving areas:</strong> Any location -
-            Amboseli
+            Lake Nakuru National Park
           </li>
           <li>
             <FontAwesomeIcon icon={faUserTie} className="icon" />

@@ -9,6 +9,8 @@ import ContactPage from "./pages/ContactPage";
 import TicketsPage from './pages/TicketsPage';
 import AmboseliTourPage from "./pages/AmboseliTourPage";
 import LakeNakuruPage from "./pages/LakeNakuruPage";
+import TsavoEastNationalParkPage from "./pages/TsavoEastNationalParkPage";
+import TsavoWestNationalParkPage from "./pages/TsavoWestNationalParkPage";
 
 function App() {
   return (
@@ -21,6 +23,9 @@ function App() {
         <Route path="/tickets" element={<TicketsPage />} />
         <Route path="/AmboseliNationalPark" element={<AmboseliTourPage />} />
         <Route path="/LakeNakuru" element={<LakeNakuruPage />} />
+        <Route path="/TsavoEastNationalPark" element={<TsavoEastNationalParkPage />} />
+        <Route path="/TsavoWestNationalPark" element={<TsavoWestNationalParkPage />} />
+
       </Routes>
       <Footer />
     </div>
